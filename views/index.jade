@@ -1,6 +1,34 @@
 extends layout
 
 block content
-  h3 Welcome to roots!
-  :marked
-    Find tutorials and documentation at http://roots.cx : )
+
+  #content.sans-serif.pa5
+
+    header
+      h1
+        | Johanna Paredes
+      h2
+        | Design, Branding &amp; Community
+      nav#contact
+
+    main
+      section#design-branding-community
+        //- h3 Design
+        ul.list
+          li: h3 Vision &amp; Community
+          li: h3 Branding &amp; Campaigns
+          li: h3 Media &amp; Print Design
+        ul.list.bt
+          li: h3 Events &amp; Management
+          li: h3 Travel &amp; Photography
+      section#founder-organizer
+        h2 Founder &amp; Organizer
+        ul.list
+          li: h3 Mimi tejidos — Handmade Ecuadorian Fashion
+          li: h3 El Colibrí — Muestra creativa
+      section#contact
+        h2 Get in touch
+        p
+          a.button(href="#contact") Contact Johanna
+    footer
+      | © 2017 Johanna Paredes
