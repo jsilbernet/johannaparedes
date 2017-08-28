@@ -8,8 +8,21 @@ module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee'),
-    css_pipeline(files: 'assets/css/*.styl')
+    js_pipeline(
+      files: [
+        'assets/js/vendor/jquery.js',
+        'assets/js/vendor/foundation.js',
+        'assets/js/main.coffee'
+      ]
+    ),
+    css_pipeline(
+      files: [
+        'assets/css/vendor/foundation.css',
+        'assets/css/vendor/tachyons.css',
+        'assets/fonts/fontawesome/css/font-awesome.css'
+        'assets/css/master.styl'
+      ]
+    )
   ]
 
   stylus:
