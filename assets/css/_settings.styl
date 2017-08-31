@@ -14,19 +14,25 @@ $raspberry = rgb(180, 62, 151)
 
 // Fonts
 
-@font-face {
-    font-family: 'metropolismedium';
+@font-face
+    font-family: 'metropolismedium'
     src: url('./../fonts/metropolis/metropolis-medium-webfont.woff2') format('woff2'),
-         url('./../fonts/metropolis/metropolis-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('./../fonts/metropolis/metropolis-medium-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
 
-}
-@font-face {
-    font-family: 'metropolisregular';
+@font-face 
+    font-family: 'metropolisregular'
     src: url('./../fonts/metropolis/metropolis-regular-webfont.woff2') format('woff2'),
-         url('./../fonts/metropolis/metropolis-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('./../fonts/metropolis/metropolis-regular-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
 
-}
+// Overrides
+
+ul
+    margin: 0
+    padding: 0
+
+.show-for-sr
+    display: none
