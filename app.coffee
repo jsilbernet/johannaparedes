@@ -18,6 +18,7 @@ module.exports =
     css_pipeline(
       files: [
         'assets/css/vendor/foundation.css',
+        'assets/css/vendor/motion-ui.css',
         'assets/css/vendor/tachyons.css',
         'assets/fonts/fontawesome/css/font-awesome.css'
         'assets/css/master.styl'
