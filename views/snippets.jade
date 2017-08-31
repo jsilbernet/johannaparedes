@@ -103,3 +103,45 @@ block content
             | Branding
           blockquote.f4.f3-l.lh-copy.measure.ph2.ph4-l
             p A life-long enthusiast of design and branding, Johanna loves to work closely with an organization to help them develop their unique identity as well as grow their community and following.
+
+
+  hr
+  
+  .bg-near-white
+    .orbit(role="region" aria-label="El Colibrí" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;")
+      .orbit-wrapper
+        .orbit-controls
+          button.orbit-previous
+            span.show-for-sr
+              | Previous Slide
+              | &#9664;&#xFE0E;
+          button.orbit-next
+            span.show-for-sr
+              | Next Slide
+              | &#9654;&#xFE0E;
+        
+      
+        ul.orbit-container
+          li.is-active.orbit-slide
+            figure.orbit-figure
+              img.orbit-image(src="./img/rio--solo.jpg" alt="Rio")
+              figcaption.orbit-caption
+                | Space, the final frontier.
+          li.orbit-slide
+            figure.orbit-figure
+              img.orbit-image(src="./img/rio--solo--bw.jpg" alt="Rio")
+              figcaption.orbit-caption
+                | Lets Rocket!
+        
+        nav.orbit-bullets
+          button.is-active(data-slide="0" )
+            span.show-for-sr
+              | First slide details.
+            span.show-for-sr
+              | Current Slide
+          button(data-slide="1")
+            span.show-for-sr
+              | Second slide details.
+          button(data-slide="2")
+            span.show-for-sr
+              | Third slide details.

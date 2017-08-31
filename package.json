@@ -12,5 +12,8 @@
     "marked": "0.3.x",
     "rupture": "0.6.x",
     "stylus": "0.54.x"
+  },
+  "devDependencies": {
+    "motion-ui": "^1.2.3"
   }
 }
