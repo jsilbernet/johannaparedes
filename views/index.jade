@@ -157,16 +157,96 @@ block content
         section.mt5.tr
           .bb.bw1.b--green.ph2.ph4-l.pb1
             h3.f4.f3-l.lh-title.ma0
-              | Mimi tejidos
-              .db.f5.f4-l
-                | Handmade Ecuadorian Fashion
-
-        section.mt5.tr
-          .bb.bw1.b--green.ph2.ph4-l.pb1
-            h3.f4.f3-l.lh-title.ma0
               | El Colibrí
               .db.f5.f4-l
                 | Muestra creativa
+          .pt5.ph4-m.ph5-l.pb0.mw7.center
+            .orbit(role="region" aria-label="El Colibrí" data-orbit data-auto-play="false" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;")
+              .orbit-wrapper
+                .orbit-controls
+                  button.orbit-previous
+                    span.show-for-sr
+                      | Previous Slide
+                      | &#9664;&#xFE0E;
+                  button.orbit-next
+                    span.show-for-sr
+                      | Next Slide
+                      | &#9654;&#xFE0E;
+                
+                ul.orbit-container
+                  li.is-active.orbit-slide
+                    figure.orbit-figure
+                      img.orbit-image(src="./img/johannaparedes_design-branding-community_el-colibri-1.jpg" alt="El Colibrí")
+                      //- figcaption.orbit-caption
+                        | Space, the final frontier.
+                  li.orbit-slide
+                    figure.orbit-figure
+                      img.orbit-image(src="./img/johannaparedes_design-branding-community_el-colibri-2.jpg" alt="El Colibrí")
+                      //- figcaption.orbit-caption
+                        | Lets Rocket!
+                  li.orbit-slide
+                    figure.orbit-figure
+                      img.orbit-image(src="./img/johannaparedes_design-branding-community_el-colibri-3.jpg" alt="El Colibrí")
+                
+                nav.orbit-bullets
+                  button.is-active(data-slide="0" )
+                    span.show-for-sr
+                      | First slide details.
+                    span.show-for-sr
+                      | Current Slide
+                  button(data-slide="1")
+                    span.show-for-sr
+                      | Second slide details.
+                  button(data-slide="2")
+                    span.show-for-sr
+                      | Third slide details.
+
+          section.mt5.tr
+            .bb.bw1.b--green.ph2.ph4-l.pb1
+              h3.f4.f3-l.lh-title.ma0
+                | Mimi tejidos
+                .db.f5.f4-l
+                  | Handmade Ecuadorian Fashion
+            .pt5.ph4-m.ph5-l.pb0.mw7.center
+              .orbit(role="region" aria-label="El Colibrí" data-orbit data-auto-play="false" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;")
+                .orbit-wrapper
+                  .orbit-controls
+                    button.orbit-previous
+                      span.show-for-sr
+                        | Previous Slide
+                        | &#9664;&#xFE0E;
+                    button.orbit-next
+                      span.show-for-sr
+                        | Next Slide
+                        | &#9654;&#xFE0E;
+                  
+                  ul.orbit-container
+                    li.is-active.orbit-slide
+                      figure.orbit-figure
+                        img.orbit-image(src="./img/johannaparedes_design-branding-community_mimi-tejidos-2.jpg" alt="El Colibrí")
+                        //- figcaption.orbit-caption
+                          | Space, the final frontier.
+                    li.orbit-slide
+                      figure.orbit-figure
+                        img.orbit-image(src="./img/johannaparedes_design-branding-community_mimi-tejidos-1.jpg" alt="El Colibrí")
+                        //- figcaption.orbit-caption
+                          | Lets Rocket!
+                    li.orbit-slide
+                      figure.orbit-figure
+                        img.orbit-image(src="./img/johannaparedes_design-branding-community_mimi-tejidos-3.jpg" alt="El Colibrí")
+                  
+                  nav.orbit-bullets
+                    button.is-active(data-slide="0" )
+                      span.show-for-sr
+                        | First slide details.
+                      span.show-for-sr
+                        | Current Slide
+                    button(data-slide="1")
+                      span.show-for-sr
+                        | Second slide details.
+                    button(data-slide="2")
+                      span.show-for-sr
+                        | Third slide details.
 
       
       section.mt6.tc#contact
