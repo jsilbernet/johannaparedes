@@ -2,7 +2,9 @@
 
 $mid-gray = rgb(85, 85, 85)
 $green = rgb(114, 195, 171)
+$green-hsl = hsl(162, 40%, 61%)
 $raspberry = rgb(180, 62, 151)
+$raspberry-hsl = hsl(315, 49%, 47%)
 
 .green
     color: $green
@@ -12,6 +14,29 @@ $raspberry = rgb(180, 62, 151)
     color: $raspberry
 .b--dark-pink
     border-color: $raspberry
+
+// Borders
+
+@-webkit-keyframes rainbow
+    0%
+        // border-color: hsl(0, 100%, 50%)
+        border-color: hsl(40, 100%, 100%)
+        border-color: $raspberry-hsl
+    100%
+        // border-color: $raspberry-hsl
+        border-color: hsl(80, 100%, 100%)
+        border-color: hsl(255, 100%, 50%)
+
+
+.b--rainbow
+  border-color: $raspberry-hsl
+  -webkit-animation: rainbow 5s infinite alternate
+
+.bb--dotted
+    border-bottom-style: dotted;
+
+.br--dotted
+    border-right-style: dotted;
 
 // Fonts
 
