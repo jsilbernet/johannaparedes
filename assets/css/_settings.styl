@@ -17,20 +17,34 @@ $raspberry-hsl = hsl(315, 49%, 47%)
 
 // Borders
 
-@-webkit-keyframes rainbow
+@-webkit-keyframes rainbow2
     0%
         // border-color: hsl(0, 100%, 50%)
         border-color: hsl(40, 100%, 100%)
         border-color: $raspberry-hsl
+    50%
+       border-color: hsl(315, 75%, 50%)
     100%
         // border-color: $raspberry-hsl
         border-color: hsl(80, 100%, 100%)
-        border-color: hsl(255, 100%, 50%)
+        border-color: hsl(270, 100%, 50%)
 
+
+@-webkit-keyframes rainbow
+    0%
+        border-color: $raspberry-hsl
+    25%
+       border-color: hsl(315, 75%, 50%)
+    50%
+        border-color: hsl(270, 100%, 50%)
+    75%
+        border-color: hsl(315, 75%, 50%)
+    100%
+        border-color: $raspberry-hsl
 
 .b--rainbow
   border-color: $raspberry-hsl
-  -webkit-animation: rainbow 5s infinite alternate
+  -webkit-animation: rainbow 8s infinite
 
 .bb--dotted
     border-bottom-style: dotted;
