@@ -1,5 +1,6 @@
 // Colors
 
+$almost-white = #f4f4f4
 $mid-gray = rgb(85, 85, 85)
 $green = rgb(114, 195, 171)
 $green-hsl = hsl(162, 40%, 61%)
@@ -16,19 +17,6 @@ $raspberry-hsl = hsl(315, 49%, 47%)
     border-color: $raspberry
 
 // Borders
-
-@-webkit-keyframes rainbow2
-    0%
-        // border-color: hsl(0, 100%, 50%)
-        border-color: hsl(40, 100%, 100%)
-        border-color: $raspberry-hsl
-    50%
-       border-color: hsl(315, 75%, 50%)
-    100%
-        // border-color: $raspberry-hsl
-        border-color: hsl(80, 100%, 100%)
-        border-color: hsl(270, 100%, 50%)
-
 
 @-webkit-keyframes rainbow
     0%
@@ -51,6 +39,16 @@ $raspberry-hsl = hsl(315, 49%, 47%)
 
 .br--dotted
     border-right-style: dotted;
+
+// Backgrounds
+
+.bg-gradient
+    background-image:
+        linear-gradient(
+          to bottom, 
+          $mid-gray 75%,
+          $almost-white
+        )
 
 // Fonts
 
