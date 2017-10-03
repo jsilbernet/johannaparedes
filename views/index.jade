@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-  article#content.sans-serif.bg-near-white
+  #content.sans-serif.bg-near-white
 
     header#top.pt6
       .cf.tc
@@ -36,7 +36,7 @@ block content
           a(href="#start" data-smooth-scroll).link.black.dib.dim.w2.h2.br-100
             i.fa.fa-long-arrow-down.v-btm
 
-    main#start
+    main(role="main")#start
       .db.mt4
         img(src="./img/fishes.jpg" width="" height="" alt="Johanna Paredes Image").w-100
       section.mt5
