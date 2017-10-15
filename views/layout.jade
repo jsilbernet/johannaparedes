@@ -10,9 +10,16 @@ html(lang='en')
     
     title Johanna Paredes — Design, Branding &amp; Community
     
-    //- link(rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css")
-    //- link(rel="stylesheet" href="./fonts/fontawesome/css/font-awesome.min.css")
     != css()
+    
+    //- Google Analytics
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-64009516-6")
+    script
+      | window.dataLayer = window.dataLayer || [];
+      | function gtag(){dataLayer.push(arguments);}
+      | gtag('js', new Date());
+
+      | gtag('config', 'UA-64009516-6');
 
   body
     block content
