@@ -1,0 +1,3 @@
+cd ./johannaparedes.com/
+
+rsync -avvz ./public/ -e ssh johannaparedes.com:/www/htdocs/w01673d2/sites/johannaparedes.com/
